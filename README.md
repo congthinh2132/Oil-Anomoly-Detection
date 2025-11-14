@@ -1,6 +1,6 @@
-# 🛢️ Oil Production Anomaly Detection (LSTM Autoencoder)
+# Oil Production Anomaly Detection (LSTM Autoencoder)
 
-## 📌 Overview
+## Overview
 This project implements a deep learning–based anomaly detection system for oil well production data using an **LSTM Autoencoder**.  
 By modeling normal operating behavior as a multivariate time-series, the autoencoder learns the “healthy” production patterns.  
 When the reconstruction error is unusually high, the corresponding points are flagged as **anomalies**, which may indicate:
@@ -13,7 +13,7 @@ All core logic—data processing, model construction, training, evaluation, and 
 
 ---
 
-## 🎯 Goal
+## Goal
 To accurately detect abnormal daily events in the oil production rate of well **NO 15/9-F-14 H** using key multivariate time-series features such as:
 
 - Oil Volume  
@@ -23,7 +23,7 @@ To accurately detect abnormal daily events in the oil production rate of well **
 
 ---
 
-## 🛠️ Methodology
+## Methodology
 
 ### **1. Data Preparation**
 - Filter the dataset for the target well.  
@@ -48,7 +48,7 @@ A sequence-to-sequence model is built:
 
 ### **5. Anomaly Threshold**
 - Compute the **Mean Absolute Error (MAE)** on training reconstruction.  
-- Set anomaly threshold at the **99th percentile** of training MAE.  
+- Set anomaly threshold at the **95th percentile** of training MAE.  
 - Any test sample exceeding this value = **anomaly**.
 
 ---
