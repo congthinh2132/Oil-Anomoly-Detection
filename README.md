@@ -63,8 +63,8 @@ pip install pandas numpy matplotlib scikit-learn tensorflow keras missingno jobl
 
 ### Steps
 #### 1. Clone Repository
-- git clone [YOUR_REPO_URL]
-- cd [YOUR_REPO_NAME]
+- git clone (https://github.com/congthinh2132/Oil-Anomoly-Detection.git)
+- cd Oil-Anomoly-Detection
 
 #### 2. Add Dataset
 - Place your raw production dataset in the project root.
@@ -80,7 +80,7 @@ pip install pandas numpy matplotlib scikit-learn tensorflow keras missingno jobl
   - Comparing between timing window 60 days and 90 days
 
 ## Results Summary
-- The model detected 39 anomalous days in the test period.
+- The model detected 80 anomalous days in the test period. (60 days time slicing)
 - The anomalies strongly correspond to periods where the well shows:
   - Sudden drops in oil rate
   - Sharply fluctuating production
@@ -88,11 +88,7 @@ pip install pandas numpy matplotlib scikit-learn tensorflow keras missingno jobl
 
 These findings demonstrate the model’s effectiveness in identifying operational irregularities that merit further engineering review.
 
-## File Structure:
-project/
-  - oil_anomaly.ipynb
-  - Volve_production_data.xlsx
-  - best_model.keras
-  - README.md
-  - /plots
-    - anomalies_plot.png
+<img width="1242" height="547" alt="image" src="https://github.com/user-attachments/assets/835ad2bb-323e-4163-af65-d0c8ab4ec20e" />
+
+<img width="1229" height="547" alt="image" src="https://github.com/user-attachments/assets/ae9e7612-c363-4e4c-93ae-aa374494a5bf" />
+
